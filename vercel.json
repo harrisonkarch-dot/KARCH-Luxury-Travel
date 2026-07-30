@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "karchluxurytravel.com"
+        }
+      ],
+      "destination": "https://www.karchluxurytravel.com/$1",
+      "permanent": true
+    }
+  ]
+}

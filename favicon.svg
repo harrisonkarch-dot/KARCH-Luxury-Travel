@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="KARCH Luxury Travel">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8efe2"/>
+      <stop offset="100%" stop-color="#d8c0a0"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b4874d"/>
+      <stop offset="100%" stop-color="#7f5928"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="url(#bg)"/>
+  <rect x="8.5" y="8.5" width="111" height="111" rx="29.5" fill="none" stroke="url(#stroke)" stroke-opacity=".55"/>
+  <text x="64" y="77" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="700" fill="#7f5928">K</text>
+</svg>

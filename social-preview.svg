@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="KARCH Luxury Travel social preview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#efe3d3"/>
+      <stop offset="55%" stop-color="#f8f1e7"/>
+      <stop offset="100%" stop-color="#e1c8a8"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#b9894f" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#b9894f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="100%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#334a48" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#334a48" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".88"/>
+      <stop offset="100%" stop-color="#f6ede1" stop-opacity=".76"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <rect x="62" y="56" width="1076" height="518" rx="36" fill="url(#card)" stroke="#b4874d" stroke-opacity=".18"/>
+  <rect x="108" y="104" width="88" height="88" rx="24" fill="#f4e6d4" stroke="#b4874d" stroke-opacity=".28"/>
+  <text x="152" y="164" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="700" fill="#7f5928">K</text>
+  <text x="108" y="238" font-family="Manrope, Arial, sans-serif" font-size="20" letter-spacing="5" fill="#7f5928" font-weight="700">KARCH LUXURY TRAVEL</text>
+  <text x="108" y="336" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">Privacy-led</text>
+  <text x="108" y="418" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">ultra-luxury</text>
+  <text x="108" y="500" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">journeys.</text>
+  <text x="108" y="552" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#5f6a72">Private aviation. Yacht charters. Elite hotels. 24/7 concierge support.</text>
+</svg>

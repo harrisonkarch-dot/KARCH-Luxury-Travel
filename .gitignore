@@ -1,0 +1,22 @@
+# Deploy / tooling
+.vercel
+node_modules/
+
+# macOS
+.DS_Store
+
+# Business planning and financials — not part of the public site
+outputs/
+KARCH_Luxury_Travel_Business_Plan_Template.md
+KARCH_Luxury_Travel_One_Page_Business_Plan.html
+build_karch_financials.mjs
+build_karch_plan_docx.py
+build_karch_plan_pptx.mjs
+build_karch_template_docx.py
+
+# Local scratch and unpublished drafts
+inspect_artifact_tool.mjs
+inspect_presentation_api.mjs
+tmp/
+tmp_*.html
+Journal
