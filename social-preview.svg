@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="KARCH Luxury Travel social preview">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="KARCH Luxury Travel vacation planning social preview">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#efe3d3"/>
@@ -25,8 +25,8 @@
   <rect x="108" y="104" width="88" height="88" rx="24" fill="#f4e6d4" stroke="#b4874d" stroke-opacity=".28"/>
   <text x="152" y="164" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="700" fill="#7f5928">K</text>
   <text x="108" y="238" font-family="Manrope, Arial, sans-serif" font-size="20" letter-spacing="5" fill="#7f5928" font-weight="700">KARCH LUXURY TRAVEL</text>
-  <text x="108" y="336" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">Privacy-led</text>
-  <text x="108" y="418" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">ultra-luxury</text>
-  <text x="108" y="500" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">journeys.</text>
-  <text x="108" y="552" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#5f6a72">Private aviation. Yacht charters. Elite hotels. 24/7 concierge support.</text>
+  <text x="108" y="336" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">Beautifully</text>
+  <text x="108" y="418" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">planned</text>
+  <text x="108" y="500" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" fill="#1d2430">vacations.</text>
+  <text x="108" y="552" font-family="Manrope, Arial, sans-serif" font-size="28" fill="#5f6a72">Handpicked hotels. Thoughtful pacing. Concierge support along the way.</text>
 </svg>

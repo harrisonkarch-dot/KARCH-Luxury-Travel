@@ -21,10 +21,25 @@ Inside the new file, update:
 - `<title>`
 - meta description
 - canonical URL
+- social sharing tags (see below)
 - category eyebrow
 - article title
 - body copy
 - sidebar notes
+
+### Social sharing tags
+
+The template has an `og:`/`twitter:` block near the top. Replace `[Post Title]`,
+`[your-file-name]`, and the description in it. These control how the link looks
+when it is shared to Instagram, WhatsApp, iMessage, LinkedIn, or texted to a client.
+
+Two rules that matter:
+
+- `og:image` must be a **JPG or PNG**, never an SVG. SVG previews render as nothing
+  on every major platform.
+- It should be **1200x630**. Generated previews live in `images/og/`.
+
+If the post has no photo of its own, leave it pointing at `images/og/brand.jpg`.
 
 If you want a different hero image style, either:
 
