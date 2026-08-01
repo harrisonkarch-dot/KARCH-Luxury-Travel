@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" role="img"
+     aria-label="Abstract sculptural composition of folded brass planes on black">
+  <defs>
+    <!-- brushed brass, lit from upper left -->
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="70%">
+      <stop offset="0%"   stop-color="#e4cd9f"/>
+      <stop offset="34%"  stop-color="#b39a6f"/>
+      <stop offset="68%"  stop-color="#6f5c3d"/>
+      <stop offset="100%" stop-color="#2a241b"/>
+    </linearGradient>
+    <linearGradient id="b2" x1="10%" y1="100%" x2="90%" y2="0%">
+      <stop offset="0%"   stop-color="#3b3225"/>
+      <stop offset="42%"  stop-color="#9c855c"/>
+      <stop offset="76%"  stop-color="#d8bf92"/>
+      <stop offset="100%" stop-color="#584a33"/>
+    </linearGradient>
+    <linearGradient id="b3" x1="0%" y1="20%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#8c7850"/>
+      <stop offset="50%"  stop-color="#cbb185"/>
+      <stop offset="100%" stop-color="#241f18"/>
+    </linearGradient>
+    <linearGradient id="b4" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#f0dcb4"/>
+      <stop offset="45%"  stop-color="#a58e63"/>
+      <stop offset="100%" stop-color="#1c1811"/>
+    </linearGradient>
+    <!-- soft ambient glow behind the forms -->
+    <radialGradient id="glow" cx="34%" cy="18%" r="72%">
+      <stop offset="0%"   stop-color="#b39a6f" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#b39a6f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#08080a" stop-opacity="0"/>
+      <stop offset="82%"  stop-color="#08080a" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity=".92"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="520" fill="#08080a"/>
+  <rect width="1600" height="520" fill="url(#glow)"/>
+
+  <!-- Deep plane, furthest back: a long slow fold across the frame -->
+  <path d="M-40 372 C 250 236, 470 430, 742 308 C 1010 188, 1250 350, 1648 214
+           L 1648 520 L -40 520 Z"
+        fill="url(#b3)" opacity=".34"/>
+
+  <!-- Second plane, torqued the other way -->
+  <path d="M-40 452 C 214 336, 388 470, 640 392 C 918 306, 1108 452, 1400 366
+           C 1500 336, 1570 348, 1648 330 L 1648 520 L -40 520 Z"
+        fill="url(#b1)" opacity=".50"/>
+
+  <!-- Principal ribbon: sweeps up and folds back on itself.
+       Both ends run past the canvas so the form bleeds off-frame
+       rather than terminating on a visible hard edge. -->
+  <path d="M-120 560 C 60 330, 372 226, 566 246 C 742 264, 826 386, 1002 380
+           C 1160 374, 1246 262, 1420 214 C 1494 194, 1600 186, 1720 190
+           C 1600 232, 1466 258, 1392 292 C 1216 372, 1140 462, 962 462
+           C 792 462, 704 348, 552 330 C 380 310, 130 400, -60 620 Z"
+        fill="url(#b4)" opacity=".92"/>
+
+  <!-- Counter-ribbon crossing beneath, catching a harder light -->
+  <path d="M-20 300 C 150 356, 268 300, 424 236 C 606 162, 742 128, 902 158
+           C 1024 180, 1088 236, 1188 262 C 1120 276, 1046 254, 946 224
+           C 800 180, 664 208, 494 282 C 330 354, 156 404, -20 348 Z"
+        fill="url(#b2)" opacity=".80"/>
+
+  <!-- Narrow bright fold - the highlight edge -->
+  <path d="M-40 580 C 180 380, 556 268, 716 292 C 852 312, 918 386, 1046 392
+           C 962 414, 878 388, 764 344 C 600 286, 260 400, 20 640 Z"
+        fill="url(#b4)" opacity=".55"/>
+
+  <!-- Hairline edges: the seams where planes meet -->
+  <path d="M-120 560 C 60 330, 372 226, 566 246 C 742 264, 826 386, 1002 380
+           C 1160 374, 1246 262, 1420 214 C 1494 194, 1600 186, 1720 190"
+        fill="none" stroke="#f2e3c4" stroke-opacity=".40" stroke-width="1.1"/>
+  <path d="M-20 300 C 150 356, 268 300, 424 236 C 606 162, 742 128, 902 158"
+        fill="none" stroke="#e8d3a8" stroke-opacity=".26" stroke-width="1"/>
+
+  <!-- settle the composition into the page -->
+  <rect width="1600" height="520" fill="url(#fade)"/>
+  <rect y="518" width="1600" height="2" fill="#b39a6f" opacity=".5"/>
+</svg>
