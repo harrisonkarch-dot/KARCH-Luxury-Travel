@@ -3131,3 +3131,80 @@ p { max-width: 68ch; }
 }
 .membership-aside .panel-label { display: block; margin-bottom: 12px; }
 .membership-aside p { margin: 0 0 26px; max-width: 58ch; }
+
+/* ---- Journal: article without owned photography ------------------------ */
+.article-hero-escapes {
+  position: relative;
+  min-height: clamp(200px, 26vw, 330px);
+  border: 1px solid rgba(179, 154, 111, 0.20);
+  background:
+    radial-gradient(ellipse at 22% 12%, rgba(179, 154, 111, 0.16), transparent 62%),
+    radial-gradient(ellipse at 84% 88%, rgba(179, 154, 111, 0.10), transparent 58%),
+    linear-gradient(160deg, #14120f 0%, #08080a 62%);
+}
+.article-hero-escapes::after {
+  content: "";
+  position: absolute; inset: auto 0 0 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(179, 154, 111, 0.55), transparent);
+}
+
+/* Standfirst line under each property heading */
+.article-standfirst {
+  color: var(--brass);
+  font-size: 13.5px;
+  letter-spacing: 0.02em;
+  margin: -6px 0 14px;
+  max-width: 60ch;
+}
+
+.blog-visual-escapes {
+  background:
+    radial-gradient(ellipse at 26% 16%, rgba(179, 154, 111, 0.20), transparent 60%),
+    linear-gradient(160deg, #16130f 0%, #08080a 68%);
+  border-bottom: 1px solid rgba(179, 154, 111, 0.24);
+}
+
+/* Sculptural hero for the Journal piece - built rather than photographed,
+   since there is no owned photography of these properties. */
+.article-hero-escapes {
+  background:
+    url("images/journal-escapes-hero.svg") center/cover no-repeat,
+    #08080a;
+  min-height: clamp(220px, 27vw, 360px);
+  border: 1px solid rgba(179, 154, 111, 0.18);
+}
+.article-hero-escapes::after { content: none; }
+
+.blog-visual-escapes {
+  background:
+    url("images/journal-escapes-hero.svg") center/cover no-repeat,
+    #08080a;
+  border-bottom: 1px solid rgba(179, 154, 111, 0.26);
+}
+
+/* ==========================================================================
+   FIX: scope the photographic hero to the homepage.
+   The global .hero rule was painting the Aman Tokyo suite behind the header
+   of all 42 pages - so the Baccarat page, the Ritz page and every Journal
+   article were showing another hotel's photograph. On inner pages the header
+   holds only the nav, so it should be plain.
+   ========================================================================== */
+body:not(.home-page) .hero {
+  background: transparent;
+  min-height: 0;
+  padding: clamp(20px, 3vw, 34px) 0 0;
+  display: block;
+}
+body:not(.home-page) .hero::after { content: none; }
+
+/* the inquiry page keeps its own deliberate photographic hero */
+body.inquire-page .hero.inquire-hero {
+  background:
+    linear-gradient(180deg, rgba(8,8,10,0.72) 0%, rgba(8,8,10,0.30) 45%, rgba(8,8,10,0.88) 100%),
+    linear-gradient(90deg, rgba(8,8,10,0.86) 0%, rgba(8,8,10,0.40) 55%, rgba(8,8,10,0.10) 100%),
+    url("images/faena-miami/pool.jpg") center/cover no-repeat;
+  padding: clamp(64px, 10vw, 140px) clamp(24px, 4vw, 64px) clamp(48px, 7vw, 92px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
