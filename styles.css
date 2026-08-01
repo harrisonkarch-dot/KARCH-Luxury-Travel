@@ -3426,3 +3426,24 @@ h3 { font-weight: 700; }
   border-top: 1px solid rgba(201, 171, 119, 0.10);
 }
 .booking-note .button { margin-top: 22px; }
+
+/* ==========================================================================
+   "A starting point, not a catalogue"
+   The hotel list can read as a bar to clear. This says plainly that it
+   isn't - quietly, as an aside rather than a disclaimer.
+   ========================================================================== */
+.not-a-catalogue {
+  max-width: 68ch;
+  margin: clamp(28px, 3.4vw, 46px) 0 0;
+  padding: clamp(24px, 2.8vw, 34px) 0 0;
+  border-top: 1px solid rgba(201, 171, 119, 0.16);
+}
+.not-a-catalogue .panel-label { display: block; margin-bottom: 12px; }
+.not-a-catalogue p { margin: 0 0 22px; font-size: 16px; line-height: 1.75; }
+
+.not-a-catalogue-line {
+  margin-top: 10px;
+  color: var(--brass);
+  font-size: 15px;
+  max-width: 64ch;
+}
