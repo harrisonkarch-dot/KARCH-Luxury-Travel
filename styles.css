@@ -2710,3 +2710,97 @@ footer a { color: var(--brass); }
 /* Trim hero height so the fold does more work */
 .hero { min-height: 0; padding-top: clamp(20px, 3vw, 34px); }
 .hero-grid { align-items: center; }
+
+/* ==========================================================================
+   INQUIRY FORM
+   ========================================================================== */
+.inquire-hero {
+  background:
+    linear-gradient(180deg, rgba(8,8,10,0.72) 0%, rgba(8,8,10,0.30) 45%, rgba(8,8,10,0.88) 100%),
+    linear-gradient(90deg, rgba(8,8,10,0.86) 0%, rgba(8,8,10,0.40) 55%, rgba(8,8,10,0.10) 100%),
+    url("images/faena-miami/pool.jpg") center/cover no-repeat;
+}
+.inquire-intro { max-width: 60ch; padding-bottom: clamp(20px, 4vw, 48px); }
+.inquire-intro h1 { font-size: clamp(40px, 5.4vw, 82px); margin: 10px 0 18px; }
+.inquire-intro .hero-text { color: rgba(241, 237, 228, 0.80); }
+
+.inquire-section { padding-top: clamp(38px, 5vw, 64px); }
+
+.inquire-form {
+  max-width: 860px;
+  background: linear-gradient(180deg, rgba(30, 30, 34, 0.72), rgba(16, 16, 18, 0.9));
+  border: 1px solid rgba(198, 161, 91, 0.20);
+  border-radius: 3px;
+  padding: clamp(26px, 4vw, 52px);
+}
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.field { display: flex; flex-direction: column; margin-bottom: 22px; }
+
+.inquire-form label {
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.inquire-form input,
+.inquire-form select,
+.inquire-form textarea {
+  background: rgba(8, 8, 10, 0.66);
+  border: 1px solid rgba(198, 161, 91, 0.22);
+  border-radius: 2px;
+  color: var(--cream);
+  font: 400 16px/1.5 "Manrope", sans-serif;
+  padding: 15px 16px;
+  transition: border-color 180ms ease, background-color 180ms ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.inquire-form textarea { resize: vertical; min-height: 130px; }
+.inquire-form input::placeholder,
+.inquire-form textarea::placeholder { color: rgba(162, 152, 138, 0.62); }
+.inquire-form input:focus,
+.inquire-form select:focus,
+.inquire-form textarea:focus {
+  outline: none;
+  border-color: var(--brass);
+  background: rgba(8, 8, 10, 0.9);
+  box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.12);
+}
+.inquire-form select { appearance: none; cursor: pointer; }
+.inquire-form select option { background: #101011; color: var(--cream); }
+
+/* honeypot - visually gone, still reachable by bots */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.form-actions {
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  margin-top: 8px; padding-top: 24px;
+  border-top: 1px solid rgba(198, 161, 91, 0.16);
+}
+.form-note { color: var(--muted); font-size: 13px; margin: 0; }
+.inquire-form button[disabled] { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.form-status { margin-top: 18px; font-size: 14px; line-height: 1.6; }
+.form-status:empty { margin: 0; }
+.form-status.is-pending { color: var(--muted); }
+.form-status.is-ok {
+  color: var(--cream);
+  border-left: 2px solid var(--brass);
+  padding: 12px 16px;
+  background: rgba(198, 161, 91, 0.08);
+}
+.form-status.is-error {
+  color: #f0d9b5;
+  border-left: 2px solid #c0703c;
+  padding: 12px 16px;
+  background: rgba(192, 112, 60, 0.10);
+}
+.form-status a { color: var(--brass); text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+}

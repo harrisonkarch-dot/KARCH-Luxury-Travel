@@ -237,7 +237,7 @@
             whether it belongs as a one-time request, a planned itinerary detail, or part of a VIP concierge relationship.
           </p>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Concierge%20Request%20for%20KARCH%20Luxury%20Travel">Submit a Concierge Request</a>
+            <a class="button primary" href="inquire.html">Submit a Concierge Request</a>
             <a class="button secondary" href="#vip-concierge">Compare Membership</a>
           </div>
         </div>
@@ -321,10 +321,10 @@
         <form
           class="luxury-form membership-form"
           id="membership-inquiry"
-          action="mailto:harrison@karchluxurytravelconcierge.com?subject=Membership%20Consultation%20Request"
+          action="/api/inquiry"
           method="post"
-          enctype="text/plain"
         >
+          <input type="hidden" name="_form" value="Membership Consultation Request">
           <div class="section-heading narrow membership-heading">
             <p class="eyebrow">Membership Inquiry</p>
             <h3>Begin with a complimentary Zoom call.</h3>
@@ -428,7 +428,7 @@
           <h2>Places chosen for beauty, atmosphere, and the kind of memories they leave behind.</h2>
           <p>
             And many more, thoughtfully chosen around the kind of experience you want next. Wherever you want to go, KARCH Luxury Travel can help plan it beautifully, anywhere in the world. We can also customize your entire itinerary around your preferences, pace, and personal style of travel.
-            <a href="mailto:harrison@karchluxurytravelconcierge.com?subject=Destination%20Inquiry%20for%20KARCH%20Luxury%20Travel">Contact Harrison to discuss your next journey.</a>
+            <a href="inquire.html">Contact Harrison to discuss your next journey.</a>
           </p>
         </div>
         <div class="destination-grid">
@@ -944,7 +944,7 @@
         </div>
         <p class="journey-note">
           Have questions about destinations, hotels, or the right style of trip for you?
-          <a href="mailto:harrison@karchluxurytravelconcierge.com?subject=Question%20for%20KARCH%20Luxury%20Travel">Email your question here</a>.
+          <a href="inquire.html">Email your question here</a>.
         </p>
       </section>
 
@@ -1113,8 +1113,8 @@
             <h3>KARCH Luxury Travel can tailor this style of journey around your dates, travel rhythm, and preferred level of luxury.</h3>
           </div>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Sample%20Client%20Proposal%20Inquiry">Request a Similar Proposal</a>
-            <a class="button secondary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Private%20Charter%20Request%20for%20KARCH%20Luxury%20Travel">Ask About Private Charter</a>
+            <a class="button primary" href="inquire.html">Request a Similar Proposal</a>
+            <a class="button secondary" href="inquire.html">Ask About Private Charter</a>
           </div>
         </div>
       </section>
@@ -1296,8 +1296,8 @@
             <h3>Every framework can be tailored with private aviation, helicopter transfers, yacht charters, or villa staffing as needed.</h3>
           </div>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Custom%20Itinerary%20Framework%20Inquiry">Request a Custom Framework</a>
-            <a class="button secondary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Ultra-Luxury%20Trip%20Planning%20Inquiry">Plan an Ultra-Luxury Journey</a>
+            <a class="button primary" href="inquire.html">Request a Custom Framework</a>
+            <a class="button secondary" href="inquire.html">Plan an Ultra-Luxury Journey</a>
           </div>
         </div>
       </section>
@@ -1348,16 +1348,16 @@
               this first conversation is designed to feel personal, clear, and thoughtful.
             </p>
             <div class="contact-actions">
-              <a class="button primary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Free%20Zoom%20Pre-Consultation%20Request">Email to Book Your Zoom Call</a>
+              <a class="button primary" href="inquire.html">Email to Book Your Zoom Call</a>
               <a class="button secondary" href="tel:+17322724675">Call Harrison Directly</a>
             </div>
           </div>
           <form
             class="luxury-form consultation-form"
-            action="mailto:harrison@karchluxurytravelconcierge.com?subject=Free%20Zoom%20Pre-Consultation%20Request"
+            action="/api/inquiry"
             method="post"
-            enctype="text/plain"
           >
+          <input type="hidden" name="_form" value="Free Zoom Pre-Consultation Request">
             <div class="section-heading narrow membership-heading">
               <p class="eyebrow">Schedule a Call</p>
               <h3>Tell us a little about you.</h3>
@@ -1447,17 +1447,18 @@
           </div>
           <p class="inquire-text">
             Potential clients can reach KARCH Luxury Travel directly by email at
-            <a href="mailto:harrison@karchluxurytravelconcierge.com?subject=KARCH%20Luxury%20Travel%20Inquiry">harrison@karchluxurytravelconcierge.com</a>
+            <a href="inquire.html">harrison@karchluxurytravelconcierge.com</a>
             or by phone at
             <a href="tel:+17322724675">732-272-4675</a>.
             If you prefer, use the email button below to begin your inquiry.
           </p>
           <div class="contact-actions">
-            <a class="button primary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=KARCH%20Luxury%20Travel%20Inquiry">Email Harrison</a>
+            <a class="button primary" href="inquire.html">Email Harrison</a>
             <a class="button secondary" href="tel:+17322724675">Call 732-272-4675</a>
-            <a class="button secondary" href="mailto:harrison@karchluxurytravelconcierge.com?subject=Question%20for%20KARCH%20Luxury%20Travel">Send a Question</a>
+            <a class="button secondary" href="inquire.html">Send a Question</a>
           </div>
-          <form class="luxury-form" action="mailto:harrison@karchluxurytravelconcierge.com" method="post" enctype="text/plain">
+          <form class="luxury-form" action="/api/inquiry" method="post">
+          <input type="hidden" name="_form" value="Website Inquiry">
             <div class="luxury-form-grid">
               <label class="field">
                 <span>Name</span>
@@ -1523,11 +1524,68 @@
         <p class="footer-copy">Luxury family vacations, yacht charters, and wellness travel curated with care.</p>
       </div>
       <div>
-        <p class="footer-copy"><a href="mailto:harrison@karchluxurytravelconcierge.com">harrison@karchluxurytravelconcierge.com</a></p>
+        <p class="footer-copy"><a href="inquire.html">harrison@karchluxurytravelconcierge.com</a></p>
         <p class="footer-copy"><a href="tel:+17322724675">732-272-4675</a></p>
       </div>
     </footer>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var MAILTO = 'harrison@karchluxurytravelconcierge.com';
+      document.querySelectorAll('form[action="/api/inquiry"]').forEach(function (form) {
+        var status = document.createElement('div');
+        status.className = 'form-status';
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite');
+        form.appendChild(status);
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var data = Object.fromEntries(new FormData(form).entries());
+          var name = data.Name || data.name || '';
+          var email = data.Email || data.email || '';
+
+          if (!name || !email) {
+            status.className = 'form-status is-error';
+            status.textContent = 'Please add your name and email so Harrison can reply.';
+            return;
+          }
+
+          var btn = form.querySelector('button[type=submit]');
+          var original = btn ? btn.textContent : '';
+          if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+          status.className = 'form-status is-pending';
+          status.textContent = 'Sending\u2026';
+
+          fetch('/api/inquiry', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(Object.assign({}, data, { name: name, email: email }))
+          })
+          .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+          .then(function () {
+            form.reset();
+            status.className = 'form-status is-ok';
+            status.innerHTML = '<strong>Sent.</strong> Harrison will come back to you personally, usually within one business day.';
+            if (btn) btn.textContent = 'Sent';
+          })
+          .catch(function () {
+            var body = Object.keys(data)
+              .filter(function (k) { return k !== '_form' && data[k]; })
+              .map(function (k) { return k + ': ' + data[k]; }).join('\n');
+            var href = 'mailto:' + MAILTO
+              + '?subject=' + encodeURIComponent((data._form || 'Website inquiry') + ' \u2014 ' + name)
+              + '&body=' + encodeURIComponent(body);
+            status.className = 'form-status is-error';
+            status.innerHTML = 'Something went wrong sending that automatically. '
+              + '<a href="' + href + '">Send it as an email instead</a> \u2014 everything you typed is already filled in.';
+            if (btn) { btn.disabled = false; btn.textContent = original; }
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
