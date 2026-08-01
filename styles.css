@@ -3332,3 +3332,36 @@ p, li, label, input, select, textarea, .button, .top-cta,
 .menu-label, .form-note, .inclusion-chip, .article-standfirst {
   font-family: "Manrope", sans-serif;
 }
+
+/* ==========================================================================
+   LEGIBILITY, SECOND PASS
+   #a8a094 measured 7.7:1 - passing on paper, still washed out in practice on
+   a pure-black ground with a light sans. Ratios are a floor, not a target.
+   Body copy goes to 11.3:1 and the brass accent up to 9.1:1.
+   ========================================================================== */
+
+:root {
+  --muted: #c9c2b6;        /* was #a8a094 - 7.7:1 -> 11.3:1 */
+  --brass: #c9ab77;        /* was #b39a6f - 7.4:1 -> 9.1:1  */
+  --cream: #f2eee6;
+}
+
+/* Anything you actually read, stated explicitly so nothing inherits dim */
+p, li, dd, .hero-text, .blog-card p, .day-card p, .panel-card p,
+.framework-card p, .gallery-card p, .intro-card p, .article-body p,
+.article-body li, .membership-aside p, .sidebar-card span {
+  color: #c9c2b6;
+}
+
+/* Small caps labels need more than body copy, not less - they are small */
+.eyebrow, .panel-label, .blog-meta, .hotel-quick-label, .article-standfirst {
+  color: #cbae7a;
+}
+
+/* Captions and footnotes were the dimmest things on the page */
+.framework-caption, .form-note, footer, footer p {
+  color: #b3aca1;
+}
+
+/* Bodoni hairlines need weight on black at text sizes */
+h3 { font-weight: 700; }
