@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Working drafts and templates, not for indexing
+Disallow: /blog-post-template.html
+Disallow: /instagram-asia-itinerary.html
+
+Sitemap: https://www.karchluxurytravel.com/sitemap.xml
