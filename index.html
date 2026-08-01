@@ -239,141 +239,30 @@
           </p>
           <div class="contact-actions">
             <a class="button primary" href="inquire.html">Submit a Concierge Request</a>
-            <a class="button secondary" href="#vip-concierge">Compare Membership</a>
+            <a class="button secondary" href="#vip-concierge">Membership Options</a>
           </div>
         </div>
       </section>
 
-      <section class="section concierge" id="vip-concierge">
-        <div class="section-heading">
-          <p class="eyebrow">VIP Concierge</p>
-          <h2>For clients who want more than trip planning, and access that continues before, during, and beyond departure.</h2>
+      <section class="section membership-quiet" id="vip-concierge">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Membership</p>
+          <h2>Planning a trip never requires a membership.</h2>
           <p>
-            KARCH Luxury Travel Concierge can support select clients with a more elevated concierge layer designed around
-            access, speed, discretion, and ongoing lifestyle support around travel.
+            Every trip on this site is planned the same way, whether you travel once a
+            year or once a month. Membership is a separate and entirely optional
+            arrangement for clients who want an ongoing concierge relationship between
+            trips, with priority handling and support that continues after you land.
           </p>
         </div>
-        <div class="concierge-grid">
-          <article class="concierge-card concierge-card-featured">
-            <p class="panel-label">Membership Tiers</p>
-            <h3>Essential</h3>
-            <p><strong>$1,000/month</strong></p>
-            <p>
-              Designed for clients who want ongoing concierge support and a trusted luxury contact for trip planning,
-              hotel bookings, and beautifully handled travel requests throughout the month.
-            </p>
-            <ul>
-              <li>Unlimited monthly requests for planning and coordination</li>
-              <li>Preferred hotel, villa, and itinerary guidance</li>
-              <li>While traveling, calls and requests are still supported, with response priority below the top tier</li>
-              <li>Voice messages and travel needs are still handled with care throughout the trip</li>
-              <li>Ideal for travelers who want elegant support without a full lifestyle layer</li>
-            </ul>
-          </article>
-
-          <article class="concierge-card">
-            <p class="panel-label">Membership Tiers</p>
-            <h3>Signature</h3>
-            <p><strong>$2,500/month</strong></p>
-            <p>
-              A stronger concierge relationship for clients who travel more often and want faster handling, more
-              flexibility, and a higher-touch level of planning throughout the month.
-            </p>
-            <ul>
-              <li>Unlimited monthly requests with priority support</li>
-              <li>Calls and requests are handled with similar priority to Essential, with more planning depth and flexibility</li>
-              <li>More complex itinerary and logistics management</li>
-              <li>Dining, spa, transport, and special-request coordination</li>
-              <li>Best for repeat luxury travelers and milestone trips</li>
-            </ul>
-          </article>
-
-          <article class="concierge-card">
-            <p class="panel-label">Membership Tiers</p>
-            <h3>Diamond</h3>
-            <p><strong>$5,000/month</strong></p>
-            <p>
-              Built for clients who want the most elevated level of private concierge service, with direct access,
-              constant oversight, and highly personalized support before, during, and throughout every journey.
-            </p>
-            <ul>
-              <li>Unlimited monthly requests with 24/7 direct access to Harrison personally</li>
-              <li>Highest-priority handling for calls, changes, and in-the-moment needs while traveling</li>
-              <li>Relationship management with hotel teams, concierges, villa staff, and excursion partners</li>
-              <li>Best available flight strategy, whether commercial premium cabins or private charter coordination</li>
-              <li>Luxury car, helicopter, and airport transfer coordination before, during, and after the trip as needed</li>
-              <li>Hands-on oversight for dining, yacht days, guides, celebrations, and complex on-the-ground logistics</li>
-              <li>Support for select needs beyond vacation planning when clients want trusted concierge help outside of travel</li>
-              <li>Ideal for executives, families, and clients who want a true high-touch lifestyle and travel manager</li>
-            </ul>
-          </article>
-        </div>
-        <div class="concierge-note">
+        <div class="membership-aside">
+          <p class="panel-label">If you are curious</p>
           <p>
-            Membership is never required to plan with KARCH. It simply adds extra benefits, priority access, and a
-            24/7 concierge relationship for clients who want white-glove support even when they are not actively
-            traveling.
+            Harrison will walk you through what membership includes and whether it suits
+            the way you travel. Most clients never need one, and that is perfectly normal.
           </p>
-          <div class="contact-actions">
-            <a class="button primary" href="#membership-inquiry">Request a Membership Consultation</a>
-            <a class="button secondary" href="#consultation">Book a Free Zoom Call</a>
-          </div>
+          <a class="button secondary" href="inquire.html">Inquire About Membership Options</a>
         </div>
-        <form
-          class="luxury-form membership-form"
-          id="membership-inquiry"
-          action="/api/inquiry"
-          method="post"
-        >
-          <input type="hidden" name="_form" value="Membership Consultation Request">
-          <div class="section-heading narrow membership-heading">
-            <p class="eyebrow">Membership Inquiry</p>
-            <h3>Begin with a complimentary Zoom call.</h3>
-          </div>
-          <p class="membership-intro">
-            Every membership conversation begins with a free Zoom consultation so Harrison can get to know your
-            travel style, preferred level of access, and whether the concierge relationship is the right fit.
-          </p>
-          <div class="luxury-form-grid">
-            <label class="field">
-              <span>Name</span>
-              <input type="text" name="Name" placeholder="Your name">
-            </label>
-            <label class="field">
-              <span>Email</span>
-              <input type="email" name="Email" placeholder="you@email.com">
-            </label>
-            <label class="field">
-              <span>Phone</span>
-              <input type="tel" name="Phone" placeholder="Optional">
-            </label>
-            <label class="field">
-              <span>Interested tier</span>
-              <select name="Interested Tier">
-                <option>Essential</option>
-                <option>Signature</option>
-                <option>Diamond</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-            <label class="field">
-              <span>Best time for Zoom</span>
-              <input type="text" name="Best Time for Zoom" placeholder="Weekdays, evenings, time zone, etc.">
-            </label>
-            <label class="field">
-              <span>Travel rhythm</span>
-              <input type="text" name="Travel Rhythm" placeholder="A few major trips a year, frequent travel, etc.">
-            </label>
-            <label class="field field-full">
-              <span>What kind of support are you looking for?</span>
-              <textarea name="Membership Needs" rows="5" placeholder="Tell Harrison what kind of travel, access, and concierge support would be most valuable to you."></textarea>
-            </label>
-          </div>
-          <div class="form-actions">
-            <button class="button primary" type="submit">Request Membership Consultation</button>
-            <p class="form-note">This sends a membership consultation request and opens your email client with your details prepared.</p>
-          </div>
-        </form>
       </section>
 
       <section class="section signature" id="signature-niches">
