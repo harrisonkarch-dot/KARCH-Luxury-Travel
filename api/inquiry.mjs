@@ -1,4 +1,6 @@
 // Receives trip inquiries from inquire.html and emails them to Harrison.
+// .mjs so Vercel treats this as an ES module - the project has no package.json,
+// so a .js file here would be parsed as CommonJS and "export default" would throw.
 //
 // Requires two environment variables set in the Vercel project:
 //   RESEND_API_KEY  - from resend.com (free tier covers 3,000 emails/month)
@@ -50,7 +52,8 @@ export default async function handler(req, res) {
   const rows = FIELDS
     .map(([k, label]) => {
       const v = String(body[k] || "").trim();
-      return v ? `<tr><td style="padding:6px 16px 6px 0;color:#8c6b34;font:600 12px sans-serif;text-transform:uppercase;letter-spacing:.08em;vertical-align:top">${esc(label)}</td><td style="padding:6px 0;font:400 15px sans-serif;color:#111">${esc(v)}</td></tr>`;
+      if (!v) return "";
+      return `<tr><td style="padding:6px 16px 6px 0;color:#8c6b34;font:600 12px sans-serif;text-transform:uppercase;letter-spacing:.08em;vertical-align:top">${esc(label)}</td><td style="padding:6px 0;font:400 15px sans-serif;color:#111">${esc(v)}</td></tr>`;
     })
     .join("");
 
