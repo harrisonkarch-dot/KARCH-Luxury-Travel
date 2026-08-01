@@ -3119,3 +3119,15 @@ p { max-width: 68ch; }
   .site-shell { width: min(1240px, calc(100% - 32px)); }
   .section { padding: clamp(56px, 12vw, 96px) 4px; }
 }
+
+/* ---- Membership: a quiet aside, not a gate ----------------------------- */
+.membership-quiet .section-heading { margin-bottom: clamp(28px, 4vw, 44px); }
+.membership-quiet .section-heading h2 { max-width: 24ch; }
+
+.membership-aside {
+  max-width: 62ch;
+  padding: clamp(26px, 3vw, 38px) 0 0;
+  border-top: 1px solid rgba(179, 154, 111, 0.16);
+}
+.membership-aside .panel-label { display: block; margin-bottom: 12px; }
+.membership-aside p { margin: 0 0 26px; max-width: 58ch; }
