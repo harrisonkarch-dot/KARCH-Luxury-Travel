@@ -289,7 +289,7 @@ body {
   border-radius: 2px;
   border: 1px solid rgba(8, 8, 9, 0.14);
   background: linear-gradient(180deg, rgba(198, 161, 91, 0.28), rgba(23, 23, 26, 0.72));
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--gold-deep);
@@ -335,7 +335,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
   font-weight: 600;
   line-height: 0.98;
 }
@@ -2935,7 +2935,7 @@ footer a { color: var(--brass); }
   border-bottom: 1px solid rgba(198, 161, 91, 0.13);
   color: var(--cream);
   text-decoration: none;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", Didot, "Playfair Display", Georgia, serif;
   font-size: 25px;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -3224,3 +3224,111 @@ body.inquire-page .hero.inquire-hero {
   transition: transform 900ms cubic-bezier(0.16,1,0.3,1);
 }
 .escape-figure:hover img { transform: scale(1.015); }
+
+/* ==========================================================================
+   LEGIBILITY
+   The quiet-luxury pass took label type down to 9.5px with 0.30em tracking.
+   The colours all pass WCAG AA comfortably - the problem was size. Wide
+   tracking at small sizes also hurts word recognition, so both come back.
+   Restraint should read as restraint, not as squinting.
+   ========================================================================== */
+
+:root { --muted: #a8a094; }        /* was #9b9285 - a little more presence */
+
+body { font-size: 17px; line-height: 1.75; }
+
+/* Labels and eyebrows: still small caps, now actually readable */
+.eyebrow,
+.panel-label,
+.blog-meta,
+.hotel-quick-label {
+  font-size: 11.5px;
+  letter-spacing: 0.19em;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Buttons carry actions - they were the worst offenders at 9.5px */
+.button,
+.top-cta,
+.topbar a:not(.button) {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  min-height: 52px;
+}
+
+.menu-label { font-size: 11.5px; letter-spacing: 0.24em; font-weight: 700; }
+
+/* Body copy over photography needs more than 78% */
+.hero-text { color: rgba(241, 237, 228, 0.92); font-size: 17px; }
+
+/* Form labels sit above inputs people have to fill in */
+.inquire-form label { font-size: 11px; letter-spacing: 0.16em; font-weight: 700; }
+.form-note { font-size: 14px; }
+
+/* Card copy */
+.blog-card p, .day-card p, .panel-card p, .framework-card p, .gallery-card p {
+  font-size: 16px;
+  line-height: 1.72;
+}
+.inclusion-chip { font-size: 12.5px; letter-spacing: 0.05em; }
+
+/* Journal nav numerals were near-invisible */
+.site-menu .sidebar-nav > a::before { font-size: 10.5px; opacity: 0.75; letter-spacing: 0.18em; }
+.site-menu .sidebar-nav > a { font-size: 24px; }
+
+/* ==========================================================================
+   TOM FORD TYPOGRAPHY
+   High-contrast Didone for display, wide-tracked caps for the brand.
+   Bodoni's hairlines thin out badly on black, so it is used at display
+   sizes only and never below ~20px - everything you actually read stays
+   in the sans.
+   ========================================================================== */
+
+h1, h2, h3,
+.hero h1,
+.section-heading h2,
+.site-menu .sidebar-nav > a {
+  font-family: "Bodoni Moda", Didot, "Playfair Display", Georgia, serif;
+  font-weight: 600;                 /* 500 disappears on a dark ground */
+  font-optical-sizing: auto;
+}
+
+h1 { letter-spacing: -0.012em; line-height: 1.02; }
+h2 { letter-spacing: -0.008em; line-height: 1.10; }
+h3 { letter-spacing: -0.004em; font-size: clamp(19px, 1.5vw, 23px); }
+
+.hero h1 { font-size: clamp(42px, 5.4vw, 88px); font-weight: 600; }
+.section-heading h2 { font-size: clamp(29px, 3.4vw, 50px); }
+
+/* The wordmark: all caps, wide tracking, the Tom Ford move */
+.brand-name {
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+.brand-subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 9.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.brand-mark {
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
+  font-weight: 700;
+}
+
+/* Menu items are large enough to carry the Didone */
+.site-menu .sidebar-nav > a { font-weight: 600; letter-spacing: -0.004em; }
+
+/* Anything small stays in the sans - this is the legibility guardrail */
+p, li, label, input, select, textarea, .button, .top-cta,
+.eyebrow, .panel-label, .blog-meta, .hotel-quick-label,
+.menu-label, .form-note, .inclusion-chip, .article-standfirst {
+  font-family: "Manrope", sans-serif;
+}
