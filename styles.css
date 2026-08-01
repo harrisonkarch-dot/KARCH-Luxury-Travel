@@ -962,13 +962,13 @@ h3 {
 .framework-image-pacific-hotel {
   background:
     linear-gradient(180deg, rgba(23, 23, 26, 0.06), rgba(198, 161, 91, 0.12)),
-    url("https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/palace-hotel-tokyo/exterior.jpg") center/cover;
 }
 
 .framework-image-pacific-room {
   background:
     linear-gradient(180deg, rgba(23, 23, 26, 0.04), rgba(198, 161, 91, 0.1)),
-    url("https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/four-seasons-otemachi/room.jpg") center/cover;
 }
 
 .framework-card h3,
@@ -1114,7 +1114,7 @@ h3 {
 .gallery-japan-culture {
   background:
     linear-gradient(180deg, rgba(23, 23, 26, 0.08), rgba(198, 161, 91, 0.16)),
-    url("https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/bulgari-tokyo/lobby.jpg") center/cover;
 }
 
 .gallery-pacific-lagoon {
@@ -1189,7 +1189,7 @@ h3 {
 .destination-japan {
   background:
     linear-gradient(180deg, rgba(16, 16, 18, 0.16), rgba(198, 161, 91, 0.12)),
-    url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/aman-tokyo/lobby.jpg") center/cover;
 }
 
 .destination-swiss {
@@ -1207,7 +1207,7 @@ h3 {
 .destination-dubai {
   background:
     linear-gradient(180deg, rgba(24, 36, 49, 0.12), rgba(121, 169, 199, 0.16)),
-    url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/atlantis-royal/outside.webp") center/cover;
 }
 
 .service-card h3 {
@@ -1265,13 +1265,13 @@ h3 {
 .blog-visual-dubai {
   background-image:
     linear-gradient(180deg, rgba(16, 16, 18, 0.18), rgba(198, 161, 91, 0.16)),
-    url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80");
+    url("images/bulgari-dubai/bulgari-overview.jpg");
 }
 
 .blog-visual-hotels {
   background-image:
     linear-gradient(180deg, rgba(16, 16, 18, 0.16), rgba(198, 161, 91, 0.14)),
-    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80");
+    url("images/palace-hotel-tokyo/lobby.jpg");
 }
 
 .blog-visual-riviera {
@@ -1289,7 +1289,7 @@ h3 {
 .blog-visual-newyork {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.16), rgba(73, 92, 117, 0.2)),
-    url("https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&fit=crop&w=1200&q=80");
+    url("images/mandarin/mandarin-view.jpeg");
 }
 
 .blog-visual-mandarin {
@@ -1301,7 +1301,7 @@ h3 {
 .blog-visual-mark {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.16), rgba(104, 85, 67, 0.18)),
-    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80");
+    url("images/the-mark/mark-bar.jpg");
 }
 
 .blog-visual-mark-real {
@@ -1313,7 +1313,7 @@ h3 {
 .blog-visual-ritz {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.18), rgba(66, 81, 97, 0.2)),
-    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80");
+    url("images/ritz/ritz-park-view.png");
 }
 
 .blog-visual-ritz-real {
@@ -1325,7 +1325,7 @@ h3 {
 .blog-visual-fourseasons {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.18), rgba(117, 92, 66, 0.18)),
-    url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80");
+    url("images/four-seasons/room-view.jpg");
 }
 
 .blog-visual-fourseasons-real {
@@ -1710,13 +1710,13 @@ h3 {
 .article-hero-dubai {
   background-image:
     linear-gradient(180deg, rgba(8, 8, 9, 0.16), rgba(140, 107, 52, 0.18)),
-    url("https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=80");
+    url("images/bulgari-dubai/overview.jpg");
 }
 
 .article-hero-hotels {
   background-image:
     linear-gradient(180deg, rgba(8, 8, 9, 0.16), rgba(140, 107, 52, 0.18)),
-    url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1600&q=80");
+    url("images/baccarat/grand-salon.jpg");
 }
 
 .article-hero-riviera {
@@ -1734,7 +1734,7 @@ h3 {
 .article-hero-newyork {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.2), rgba(73, 92, 117, 0.2)),
-    url("https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1600&q=80");
+    url("images/baccarat/exterior.jpg");
 }
 
 .article-hero-mandarin {
@@ -1746,7 +1746,7 @@ h3 {
 .article-hero-mark {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.2), rgba(104, 85, 67, 0.2)),
-    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80");
+    url("images/the-mark/mark-outside.jpeg");
 }
 
 .article-hero-mark-real {
@@ -1758,7 +1758,7 @@ h3 {
 .article-hero-ritz {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.2), rgba(66, 81, 97, 0.2)),
-    url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80");
+    url("images/ritz/ritz-exterior.png");
 }
 
 .article-hero-ritz-real {
@@ -1770,7 +1770,7 @@ h3 {
 .article-hero-fourseasons {
   background-image:
     linear-gradient(180deg, rgba(23, 23, 26, 0.2), rgba(117, 92, 66, 0.2)),
-    url("https://images.unsplash.com/photo-1505693416388-ac5ce068feeb?auto=format&fit=crop&w=1600&q=80");
+    url("images/four-seasons/exterior.jpg");
 }
 
 .article-hero-fourseasons-real {
@@ -2044,7 +2044,7 @@ h3 {
 .niche-wellness {
   background:
     linear-gradient(180deg, rgba(16, 16, 18, 0.26), rgba(198, 161, 91, 0.1)),
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80") center/cover;
+    url("images/aman-tokyo/wellness.jpg") center/cover;
 }
 
 .niche-copy {
@@ -3008,3 +3008,114 @@ footer a { color: var(--brass); }
 /* Trigger must stay above the drawer so the menu can be closed again */
 .site-menu summary { position: relative; z-index: 2; }
 .site-menu[open] summary .menu-label { color: var(--brass); }
+
+/* ==========================================================================
+   QUIET LUXURY
+   Loro Piana / Cucinelli discipline: soften the accent, widen the margins,
+   lower the contrast, let space do the work. Nothing here shouts.
+   ========================================================================== */
+
+:root {
+  /* Bronze rather than gold - less saturated, closer to stone and camel */
+  --brass: #b39a6f;
+  --brass-bright: #cdb894;
+  --brass-deep: #7d6a4a;
+  --gold: #b39a6f;
+  --gold-deep: #7d6a4a;
+  --cream: #ece7dc;
+  --muted: #9b9285;
+  --line: rgba(179, 154, 111, 0.18);
+}
+
+/* The page itself is quiet - no glow, just black */
+body {
+  background: #08080a;
+  font-size: 16.5px;
+  line-height: 1.72;
+}
+
+/* ---- Space ------------------------------------------------------------- */
+.site-shell { width: min(1240px, calc(100% - 56px)); }
+.section { padding: clamp(84px, 11vw, 168px) clamp(20px, 3vw, 44px); }
+.section-heading { margin-bottom: clamp(38px, 5vw, 64px); }
+.panel-card, .blog-card, .day-card, .framework-card, .gallery-card { padding: clamp(26px, 3vw, 40px); }
+
+/* ---- Type: finer, wider tracked, less shouty --------------------------- */
+.eyebrow, .panel-label, .blog-meta {
+  font-size: 9.5px;
+  letter-spacing: 0.30em;
+  font-weight: 600;
+  color: var(--brass);
+  opacity: 0.92;
+}
+h1 { letter-spacing: -0.022em; font-weight: 500; }
+h2 { letter-spacing: -0.018em; font-weight: 500; }
+h3 { letter-spacing: -0.012em; font-weight: 500; }
+.section-heading h2 { max-width: 20ch; }
+p { max-width: 68ch; }
+.hero-text { font-size: 16.5px; line-height: 1.75; }
+
+/* ---- Surfaces: barely-there separation --------------------------------- */
+.panel-card, .blog-card, .day-card, .framework-card, .gallery-card, .intro-card {
+  background: rgba(255, 255, 255, 0.018);
+  border: 1px solid rgba(179, 154, 111, 0.13);
+}
+.panel-card:hover, .blog-card:hover, .day-card:hover, .gallery-card:hover {
+  border-color: rgba(179, 154, 111, 0.30);
+  transform: none;                 /* stillness reads as confidence */
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: none;
+}
+
+/* ---- Controls ---------------------------------------------------------- */
+.button, .top-cta, .topbar a:not(.button) {
+  font-size: 9.5px;
+  letter-spacing: 0.30em;
+  font-weight: 600;
+  min-height: 54px;
+}
+.button.primary { background: var(--brass); border-color: var(--brass); color: #08080a; }
+.button.primary:hover { background: transparent; color: var(--brass); }
+.inclusion-chip {
+  background: none;
+  border: 1px solid rgba(179, 154, 111, 0.22);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+}
+
+/* ---- Hero: let more of the photograph through -------------------------- */
+.hero {
+  background:
+    linear-gradient(180deg, rgba(8,8,10,0.56) 0%, rgba(8,8,10,0.14) 42%, rgba(8,8,10,0.70) 100%),
+    linear-gradient(90deg, rgba(8,8,10,0.86) 0%, rgba(8,8,10,0.36) 52%, rgba(8,8,10,0.02) 100%),
+    url("images/aman-tokyo/panorama-suite.jpg") center/cover no-repeat;
+}
+.hero h1 { font-size: clamp(44px, 5.6vw, 92px); }
+.hero .panel-card, .hero-panel .panel-card {
+  background: rgba(8, 8, 10, 0.36);
+  border-color: rgba(179, 154, 111, 0.22);
+}
+
+/* ---- Menu: quieter still ----------------------------------------------- */
+.site-menu .sidebar-nav > a { font-size: 23px; font-weight: 500; padding: 19px 0; }
+.site-menu .sidebar-nav > a::before { opacity: 0.55; letter-spacing: 0.26em; }
+.site-menu .sidebar-nav { border-right-color: rgba(179, 154, 111, 0.20); }
+.menu-label { letter-spacing: 0.34em; font-weight: 600; font-size: 9.5px; }
+
+/* ---- Form ---------------------------------------------------------------*/
+.inquire-form { background: rgba(255, 255, 255, 0.018); border-color: rgba(179, 154, 111, 0.14); }
+.inquire-form label { font-size: 9.5px; letter-spacing: 0.26em; font-weight: 600; }
+.inquire-form input, .inquire-form select, .inquire-form textarea {
+  background: rgba(0, 0, 0, 0.34);
+  border-color: rgba(179, 154, 111, 0.18);
+}
+.inquire-form input:focus, .inquire-form select:focus, .inquire-form textarea:focus {
+  border-color: var(--brass);
+  box-shadow: 0 0 0 3px rgba(179, 154, 111, 0.10);
+}
+
+@media (max-width: 640px) {
+  .site-shell { width: min(1240px, calc(100% - 32px)); }
+  .section { padding: clamp(56px, 12vw, 96px) 4px; }
+}
