@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip | KARCH Luxury Travel</title>
+  <meta name="description" content="Tell KARCH Luxury Travel about the trip you have in mind — destination, dates, and who is travelling — and Harrison will come back to you personally within one business day.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KARCH Luxury Travel Concierge">
+  <meta property="og:title" content="Plan Your Trip | KARCH Luxury Travel">
+  <meta property="og:description" content="Tell KARCH Luxury Travel about the trip you have in mind — destination, dates, and who is travelling — and Harrison will come back to you personally within one business day.">
+  <meta property="og:url" content="https://www.karchluxurytravel.com/inquire.html">
+  <meta property="og:image" content="https://www.karchluxurytravel.com/images/og/brand.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Plan Your Trip | KARCH Luxury Travel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plan Your Trip | KARCH Luxury Travel">
+  <meta name="twitter:description" content="Tell KARCH Luxury Travel about the trip you have in mind and Harrison will come back to you personally within one business day.">
+  <meta name="twitter:image" content="https://www.karchluxurytravel.com/images/og/brand.jpg">
+  <link rel="canonical" href="https://www.karchluxurytravel.com/inquire.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="article-page inquire-page">
+  <div class="site-shell">
+    <header class="hero inquire-hero">
+      <nav class="topbar">
+        <div class="brand-lockup">
+          <span class="brand-mark">K</span>
+          <div>
+            <p class="brand-name">KARCH Luxury Travel Concierge</p>
+            <p class="brand-subtitle">Plan Your Trip</p>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="favorite-hotels.html">Favorite Hotels</a>
+          <a href="signature-suites.html">Signature Suites</a>
+          <a href="blog.html">Journal</a>
+        </div>
+      </nav>
+      <div class="inquire-intro">
+        <p class="eyebrow">Start the conversation</p>
+        <h1>Tell me where you want to go.</h1>
+        <p class="hero-text">
+          The more you share, the better the first suggestion. Nothing here is binding,
+          and there is no cost to ask — most people start with a rough idea and we shape it together.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section inquire-section">
+        <form class="inquire-form" id="inquiry-form" method="POST" action="/api/inquiry" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Karch">
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="destination">Where are you thinking?</label>
+              <input type="text" id="destination" name="destination" placeholder="Amalfi, Tokyo, or “not sure yet”">
+            </div>
+            <div class="field">
+              <label for="triptype">What kind of trip?</label>
+              <select id="triptype" name="triptype">
+                <option value="">Choose one</option>
+                <option>Honeymoon or anniversary</option>
+                <option>Family vacation</option>
+                <option>Milestone birthday</option>
+                <option>Couples getaway</option>
+                <option>Friends or group trip</option>
+                <option>Solo travel</option>
+                <option>Still deciding</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="dates">Rough dates</label>
+              <input type="text" id="dates" name="dates" placeholder="Early June, or flexible">
+            </div>
+            <div class="field">
+              <label for="travellers">How many travelling?</label>
+              <input type="text" id="travellers" name="travellers" placeholder="2 adults, 1 child">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Anything else worth knowing?</label>
+            <textarea id="notes" name="notes" rows="5" placeholder="Celebrating something? Somewhere you loved before? A hotel you have had your eye on? All useful."></textarea>
+          </div>
+
+          <!-- honeypot: bots fill this, humans never see it -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="button primary" id="submit-btn">Send this to Harrison</button>
+            <p class="form-note">Replies come from Harrison personally, usually within one business day.</p>
+          </div>
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 KARCH Luxury Travel Concierge. Every trip planned personally.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var form = document.getElementById('inquiry-form');
+      var statusEl = document.getElementById('form-status');
+      var btn = document.getElementById('submit-btn');
+      var MAILTO = 'harrison@karchluxurytravelconcierge.com';
+
+      function show(kind, html) {
+        statusEl.className = 'form-status is-' + kind;
+        statusEl.innerHTML = html;
+      }
+
+      // Builds a prefilled email as a fallback so an inquiry is never lost.
+      function mailtoFallback(data) {
+        var body = [
+          'Name: ' + (data.name || ''),
+          'Email: ' + (data.email || ''),
+          'Destination: ' + (data.destination || ''),
+          'Trip type: ' + (data.triptype || ''),
+          'Dates: ' + (data.dates || ''),
+          'Travelling: ' + (data.travellers || ''),
+          '',
+          data.notes || ''
+        ].join('\n');
+        return 'mailto:' + MAILTO
+          + '?subject=' + encodeURIComponent('Trip inquiry from ' + (data.name || 'the website'))
+          + '&body=' + encodeURIComponent(body);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = Object.fromEntries(new FormData(form).entries());
+
+        if (!data.name || !data.email) {
+          show('error', 'Please add your name and email so Harrison can reply.');
+          return;
+        }
+        if (data.company) { return; } // honeypot tripped
+
+        btn.disabled = true;
+        var original = btn.textContent;
+        btn.textContent = 'Sending…';
+        show('pending', 'Sending your note…');
+
+        fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function () {
+          form.reset();
+          show('ok', '<strong>Sent.</strong> Harrison will come back to you personally, usually within one business day.');
+          btn.textContent = 'Sent';
+        })
+        .catch(function () {
+          // Never lose an inquiry: hand it to their mail client, fully prefilled.
+          show('error',
+            'Something went wrong sending that automatically. ' +
+            '<a href="' + mailtoFallback(data) + '">Click here to send it as an email instead</a> — ' +
+            'everything you typed is already filled in.');
+          btn.disabled = false;
+          btn.textContent = original;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
