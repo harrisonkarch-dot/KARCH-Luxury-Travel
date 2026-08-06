@@ -3447,3 +3447,113 @@ h3 { font-weight: 700; }
   font-size: 15px;
   max-width: 64ch;
 }
+
+/* ==========================================================================
+   SUBSECTION HEADINGS - wolf grey, and out of Bodoni
+   Bodoni is a Didone: its thin strokes are hairlines. Beautiful at 90px on
+   the h1, close to invisible at 25-30px on black. Display type keeps Bodoni;
+   everything below it moves to the sans, where the strokes have real weight.
+   ========================================================================== */
+
+:root { --wolf: #b0b2b5; }        /* 9.4:1 on the page ground */
+
+h2, h3, h4,
+.section-heading h2,
+.hotel-quick-card h3,
+.blog-card h3,
+.day-card h3,
+.panel-card h2,
+.benefit-card h3,
+.framework-card h3,
+.article-body h2,
+.article-body h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: var(--wolf);
+  letter-spacing: -0.008em;
+  line-height: 1.28;
+}
+
+/* Size adjusts because the sans sets smaller on the body than the Didone */
+h2, .section-heading h2 { font-size: clamp(24px, 2.5vw, 34px); }
+h3 { font-size: clamp(17px, 1.35vw, 20px); }
+
+/* h1 keeps Bodoni - at display size the hairlines are the whole point */
+h1, .hero h1 {
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+/* Drawer nav is large enough to keep the Didone too */
+.site-menu .sidebar-nav > a {
+  font-family: "Bodoni Moda", Didot, Georgia, serif;
+  color: var(--cream);
+}
+
+/* ==========================================================================
+   FIX: nav links became buttons on every inner page
+   The rule that rescued the invisible "Book a Free Zoom Call" CTA matched any
+   unclassed <a> in .topbar. The homepage has one such link; inner pages have a
+   six-item nav, so the whole nav rendered as bordered boxes on two rows.
+   Only a direct child of .topbar gets the button treatment now.
+   ========================================================================== */
+
+.topbar .nav-links a,
+.topbar .nav-links a:not(.button) {
+  display: inline;
+  border: 0 !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 0 0 26px;
+  min-height: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+.topbar .nav-links a:hover { color: var(--brass); background: none !important; }
+.nav-links { display: flex; flex-wrap: wrap; justify-content: flex-end; row-gap: 8px; }
+
+/* Only a link sitting directly in the topbar (the Zoom CTA) stays a button */
+.topbar > a:not(.button) {
+  display: inline-flex;
+  border: 1px solid rgba(201, 171, 119, 0.42);
+  padding: 12px 22px;
+  color: var(--brass);
+}
+
+/* MENU chip was overlapping the brand lockup */
+.site-menu > summary { position: relative; z-index: 30; }
+.topbar { padding-left: 0; }
+.brand-lockup { padding-left: 116px; }
+@media (max-width: 640px) { .brand-lockup { padding-left: 0; padding-top: 46px; } }
+
+/* Clear the MENU chip by dropping the topbar, not by squeezing the wordmark */
+.brand-lockup { padding-left: 0; }
+.topbar { padding-top: 58px; }
+@media (max-width: 640px) { .brand-lockup { padding-top: 0; } }
+
+/* The wordmark should never wrap */
+.topbar { grid-template-columns: minmax(320px, 460px) 1fr; }
+.brand-name { white-space: nowrap; font-size: 13px; letter-spacing: 0.26em; }
+.brand-subtitle { white-space: nowrap; }
+@media (max-width: 900px) {
+  .topbar { grid-template-columns: 1fr; }
+  .brand-name { white-space: normal; }
+  .nav-links { justify-content: flex-start; }
+  .topbar .nav-links a { margin: 0 24px 0 0; }
+}
+
+/* The earlier `.hero > .topbar` rule outranks plain `.topbar`, so the
+   clearance for the MENU chip has to match that specificity. */
+.hero > .topbar,
+header.hero > .topbar {
+  padding-top: 62px;
+}
+@media (max-width: 640px) {
+  .hero > .topbar, header.hero > .topbar { padding-top: 54px; }
+}
