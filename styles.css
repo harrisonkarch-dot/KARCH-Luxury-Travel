@@ -3557,3 +3557,43 @@ header.hero > .topbar {
 @media (max-width: 640px) {
   .hero > .topbar, header.hero > .topbar { padding-top: 54px; }
 }
+
+/* ==========================================================================
+   JOURNAL PROPERTY PHOTOGRAPHY
+   Sources range from 554px to 2000px wide. Rather than upscaling the small
+   ones into a full-bleed banner, images sit at column width and are capped
+   at their native size, so nothing is stretched past what it can carry.
+   ========================================================================== */
+.property-shot {
+  margin: 22px 0 30px;
+  padding: 0;
+}
+.property-shot img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(201, 171, 119, 0.16);
+  background: #0b0b0d;
+}
+.property-shot figcaption {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9a948b;
+}
+
+/* The hero uses Mohonk - the only source sharp enough for full width */
+.article-hero-escapes {
+  background:
+    linear-gradient(180deg, rgba(8,8,10,0.30) 0%, rgba(8,8,10,0.10) 45%, rgba(8,8,10,0.72) 100%),
+    url("images/escapes/og/mohonk.jpg") center/cover no-repeat,
+    #08080a;
+}
+
+.blog-visual-escapes {
+  background:
+    url("images/escapes/og/mohonk.jpg") center/cover no-repeat,
+    #08080a;
+}
