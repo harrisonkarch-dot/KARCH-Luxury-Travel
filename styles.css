@@ -3695,3 +3695,8 @@ header.hero > .topbar {
   padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
+
+.blog-visual-zaabeel {
+  background: url("images/journal-web/og-zaabeel.jpg") center/cover no-repeat, #08080a;
+  border-bottom: 1px solid rgba(201, 171, 119, 0.24);
+}
