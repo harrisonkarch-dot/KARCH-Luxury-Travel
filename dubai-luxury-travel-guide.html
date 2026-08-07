@@ -242,6 +242,23 @@
         </section>
       </aside>
     </main>
+
+        <section class="journal-signup" aria-labelledby="signup-heading">
+          <p class="panel-label">Notes from the Journal</p>
+          <h2 id="signup-heading">Pieces like this, occasionally.</h2>
+          <p class="journal-signup-copy">
+            Where to go and when, what is worth the flight, and the odd hotel I cannot stop
+            thinking about. Once a month at most, and never a sales email.
+          </p>
+          <form class="journal-signup-form" novalidate>
+            <label class="sr-only" for="signup-email">Email address</label>
+            <input id="signup-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+            <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field">
+            <button type="submit" class="button primary">Send Me the Journal</button>
+          </form>
+          <p class="journal-signup-status" role="status" aria-live="polite"></p>
+        </section>
+
     <div class="affiliation-bar">
       <p>
         KARCH Luxury Travel Concierge is an affiliate of <strong>Departure Lounge</strong>,
@@ -256,5 +273,47 @@
     </div>
 
   </div>
+
+  <script>
+    (function () {
+      var form = document.querySelector('.journal-signup-form');
+      if (!form) return;
+      var status = document.querySelector('.journal-signup-status');
+      var btn = form.querySelector('button');
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var email = form.email.value.trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          status.textContent = 'That email address looks wrong.';
+          status.className = 'journal-signup-status is-error';
+          return;
+        }
+        btn.disabled = true;
+        var original = btn.textContent;
+        btn.textContent = 'Sending…';
+        try {
+          var r = await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, company: form.company.value, source: document.title })
+          });
+          if (r.ok) {
+            form.style.display = 'none';
+            status.textContent = 'Thank you — you are on the list.';
+            status.className = 'journal-signup-status is-ok';
+          } else {
+            var d = await r.json().catch(function () { return {}; });
+            status.textContent = d.error || 'Something went wrong. Try again shortly.';
+            status.className = 'journal-signup-status is-error';
+            btn.disabled = false; btn.textContent = original;
+          }
+        } catch (err) {
+          status.textContent = 'Something went wrong. Try again shortly.';
+          status.className = 'journal-signup-status is-error';
+          btn.disabled = false; btn.textContent = original;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
