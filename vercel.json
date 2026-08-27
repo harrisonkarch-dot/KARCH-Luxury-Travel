@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/favorite-hotels.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/signature-suites.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
