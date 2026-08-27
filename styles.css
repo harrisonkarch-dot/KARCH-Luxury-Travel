@@ -4390,3 +4390,101 @@ body.inquire-page .hero-text {
 .article-image-card {
   border-color: var(--line);
 }
+
+
+/* ==========================================================================
+   DESKTOP TOOLBAR NAVIGATION
+   Persistent access to key pages and homepage sections without reopening a
+   drawer or scrolling back to the beginning.
+   ========================================================================== */
+
+html {
+  scroll-padding-top: 82px;
+}
+
+@media (min-width: 901px) {
+  .site-menu {
+    position: sticky;
+    top: 0;
+    z-index: 80;
+    width: 100%;
+    margin: 0 0 12px;
+    border: 1px solid rgba(76, 130, 150, 0.22);
+    border-radius: 0 0 14px 14px;
+    background: rgba(255, 255, 255, 0.91);
+    box-shadow: 0 14px 34px rgba(53, 89, 106, 0.12);
+    backdrop-filter: blur(18px);
+  }
+
+  .site-menu > summary {
+    display: none;
+  }
+
+  .site-menu .sidebar-nav {
+    position: static;
+    display: flex;
+    grid-template-columns: none;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    padding: 0 10px;
+    overflow-x: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(76, 130, 150, 0.28) transparent;
+  }
+
+  .site-menu .sidebar-nav > a,
+  .site-menu .sidebar-nav > a:not(.button) {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 0 14px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: var(--ink);
+    font-family: "Manrope", sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .site-menu .sidebar-nav > a::before {
+    content: none;
+  }
+
+  .site-menu .sidebar-nav > a:hover,
+  .site-menu .sidebar-nav > a:focus-visible,
+  .site-menu .sidebar-nav > a[aria-current="page"] {
+    color: var(--brass-deep);
+    border-bottom-color: var(--brass);
+    background: rgba(230, 243, 246, 0.72);
+    transform: none;
+  }
+
+  .site-menu .sidebar-card {
+    display: none;
+  }
+
+  .hero > .topbar,
+  header.hero > .topbar {
+    padding-top: 18px;
+  }
+
+  .section[id] {
+    scroll-margin-top: 82px;
+  }
+}
