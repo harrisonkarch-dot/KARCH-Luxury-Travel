@@ -12,10 +12,10 @@
       place-items: center;
       padding: 24px;
       overflow: hidden;
-      color: #f1ede4;
+      color: #171513;
       background:
-        radial-gradient(circle at 50% 42%, rgba(198, 161, 91, 0.16), transparent 30%),
-        linear-gradient(145deg, #08080a, #111113 58%, #09090b);
+        radial-gradient(circle at 50% 42%, rgba(198, 161, 91, 0.2), transparent 30%),
+        linear-gradient(145deg, #fffdf8, #f5efe4 58%, #eee3d2);
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
@@ -26,7 +26,7 @@
       content: "";
       position: absolute;
       inset: 18px;
-      border: 1px solid rgba(198, 161, 91, 0.24);
+      border: 1px solid rgba(140, 107, 52, 0.28);
       pointer-events: none;
     }
 
@@ -56,13 +56,14 @@
       place-items: center;
       width: 76px;
       height: 76px;
-      border: 1px solid rgba(224, 192, 136, 0.68);
+      border: 1px solid rgba(140, 107, 52, 0.62);
       border-radius: 50%;
       font-family: "Bodoni Moda", Georgia, serif;
       font-size: 2.3rem;
       line-height: 1;
-      color: #e0c088;
-      box-shadow: 0 0 0 10px rgba(198, 161, 91, 0.05);
+      color: #8c6b34;
+      background: rgba(255, 253, 248, 0.7);
+      box-shadow: 0 0 0 10px rgba(198, 161, 91, 0.08);
     }
 
     .karch-page-transition__name {
@@ -72,7 +73,7 @@
       font-weight: 700;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: rgba(241, 237, 228, 0.82);
+      color: rgba(73, 58, 39, 0.78);
     }
 
     .karch-page-transition__message {
@@ -80,14 +81,14 @@
       font-family: "Bodoni Moda", Georgia, serif;
       font-size: clamp(1.65rem, 5vw, 2.45rem);
       line-height: 1.15;
-      color: #f1ede4;
+      color: #171513;
     }
 
     .karch-page-transition__line {
       width: 112px;
       height: 1px;
       overflow: hidden;
-      background: rgba(198, 161, 91, 0.2);
+      background: rgba(140, 107, 52, 0.18);
     }
 
     .karch-page-transition__line::after {
@@ -95,7 +96,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, #e0c088, transparent);
+      background: linear-gradient(90deg, transparent, #9a7132, transparent);
       transform: translateX(-100%);
     }
 
