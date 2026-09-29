@@ -1,5 +1,5 @@
 (() => {
-  const TRANSITION_MS = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 120 : 680;
+  const TRANSITION_MS = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 120 : 1200;
   let isTransitioning = false;
 
   const styles = document.createElement("style");
@@ -101,7 +101,7 @@
     }
 
     .karch-page-transition.is-active .karch-page-transition__line::after {
-      animation: karch-transition-line 640ms ease-out forwards;
+      animation: karch-transition-line 1050ms ease-out forwards;
     }
 
     @keyframes karch-transition-line {
