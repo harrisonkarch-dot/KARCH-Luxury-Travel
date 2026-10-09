@@ -5145,3 +5145,47 @@ body:not(.home-page) .compact-page-hero {
     width: 100%;
   }
 }
+
+/* Homepage client testimonials */
+.client-testimonials {
+  padding: clamp(48px, 6vw, 80px) clamp(20px, 3vw, 44px);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(24px, 3vw, 32px);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--brass);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 44px rgba(72, 108, 124, 0.08);
+}
+
+.testimonial-quote-mark {
+  display: block;
+  height: 48px;
+  color: var(--brass-deep);
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.client-testimonials .testimonial-card p {
+  margin: 16px 0 0;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
